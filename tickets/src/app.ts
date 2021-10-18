@@ -2,10 +2,6 @@ import express from "express";
 import "express-async-errors";
 import cookieSession from "cookie-session";
 
-import { currentUserRouter } from "./routes/current-user";
-import { siginRouter } from "./routes/signin";
-import { signupRouter } from "./routes/signup";
-import { signoutRouter } from "./routes/signout";
 import { errorHandler, NotFoundError } from "@luketickets/common";
 
 const app = express();
@@ -17,11 +13,6 @@ app.use(
         secure: process.env.NODE_ENV !== "test",
     })
 );
-
-app.use(currentUserRouter);
-app.use(siginRouter);
-app.use(signoutRouter);
-app.use(signupRouter);
 
 const wait = async (ms: number) => {
     return new Promise((resolve) =>
