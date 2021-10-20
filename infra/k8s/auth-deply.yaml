@@ -17,7 +17,7 @@ spec:
                   image: lukezzz/ticketing_auth
                   imagePullPolicy: Never
                   env:
-                      - name: NONGO_URI
+                      - name: MONGO_URI
                         value: "mongodb://auth-mongo-srv:27017/auth"
                       - name: JWT_KEY
                         valueFrom:

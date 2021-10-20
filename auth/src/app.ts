@@ -33,9 +33,9 @@ const wait = async (ms: number) => {
 };
 
 app.all("*", async (req, res) => {
-    console.log("before await", new Date());
-    await wait(5 * 1000);
-    console.log("after await", new Date());
+    // console.log("before await", new Date());
+    // await wait(5 * 1000);
+    // console.log("after await", new Date());
     throw new NotFoundError();
 });
 
