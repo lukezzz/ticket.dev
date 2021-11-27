@@ -488,9 +488,9 @@
     chalk "^4.0.0"
 
 "@luketickets/common@^1.0.18":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@luketickets/common/-/common-1.0.19.tgz#99ee80b3e13e49782d904b107d831b55dd941d22"
-  integrity sha512-N+Vg+1bxpukkDMUNd3ApWAfcUsedABcXQKdK0bUVfLnYEREv+ZxA4vkIogpI1KvJMIfV5hak+v404OOp+1L1aA==
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/@luketickets/common/-/common-1.0.20.tgz#ece4db34a32b1e4c4e167a4869f5d0a152453b05"
+  integrity sha512-wPGLZ9ysVRhvw/ZuaDAU95dNCOpDgiB1qEkC5yKSssClNQEXaY0OWHK+hreRw6HCXKUNzMR6pMv3/T4HGkEQxg==
   dependencies:
     "@types/cookie-session" "^2.0.43"
     "@types/express" "^4.17.13"
