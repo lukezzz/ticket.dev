@@ -487,10 +487,10 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@luketickets/common@^1.0.17":
-  version "1.0.17"
-  resolved "https://registry.yarnpkg.com/@luketickets/common/-/common-1.0.17.tgz#c487e80c9ca8e6329a0eb715f30e1ab1bdee53a8"
-  integrity sha512-vZPgaOPM9ozuPfr9e2IhhnFCblbIiITAAg++VpowptXyOeXZw2zoCqlz72X+VB0dWX6IeQ9cwOtaOqi+I74nGg==
+"@luketickets/common@^1.0.18":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@luketickets/common/-/common-1.0.19.tgz#99ee80b3e13e49782d904b107d831b55dd941d22"
+  integrity sha512-N+Vg+1bxpukkDMUNd3ApWAfcUsedABcXQKdK0bUVfLnYEREv+ZxA4vkIogpI1KvJMIfV5hak+v404OOp+1L1aA==
   dependencies:
     "@types/cookie-session" "^2.0.43"
     "@types/express" "^4.17.13"
@@ -1330,6 +1330,11 @@ cookies@0.8.0:
     depd "~2.0.0"
     keygrip "~1.1.0"
 
+core-js@^3.2.1:
+  version "3.19.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.1.tgz#f6f173cae23e73a7d88fa23b6e9da329276c6641"
+  integrity sha512-Tnc7E9iKd/b/ff7GFbhwPVzJzPztGrChB8X8GLqoYGdEOG8IpLnK1xPyo3ZoO3HsK6TodJS58VGPOxA+hLHQMg==
+
 core-util-is@~1.0.0:
   version "1.0.3"
   resolved "https://registry.nlark.com/core-util-is/download/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
@@ -1876,9 +1881,9 @@ globals@^11.1.0:
   integrity sha1-q4eVM4hooLq9hSV1gBjCp+uVxC4=
 
 google-protobuf@^3.11.2:
-  version "3.18.1"
-  resolved "https://registry.npmmirror.com/google-protobuf/download/google-protobuf-3.18.1.tgz#31de10b65e833aa5bbd44680e8a748fa54c920f6"
-  integrity sha1-Md4Qtl6DOqW71EaA6KdI+lTJIPY=
+  version "3.19.1"
+  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.19.1.tgz#5af5390e8206c446d8f49febaffd4b7f4ac28f41"
+  integrity sha512-Isv1RlNC+IzZzilcxnlVSf+JvuhxmY7DaxYCBy+zPS9XVuJRtlTTIXR9hnZ1YL1MMusJn/7eSy2swCzZIomQSg==
 
 got@^9.6.0:
   version "9.6.0"
@@ -2717,7 +2722,7 @@ jws@^3.2.2:
     jwa "^1.4.1"
     safe-buffer "^5.0.1"
 
-kareem@2.3.2:
+kareem@2.3.2, kareem@^2.3.0:
   version "2.3.2"
   resolved "https://registry.npm.taobao.org/kareem/download/kareem-2.3.2.tgz#78c4508894985b8d38a0dc15e1a8e11078f2ca93"
   integrity sha1-eMRQiJSYW404oNwV4ajhEHjyypM=
@@ -2810,8 +2815,8 @@ lodash.once@^4.0.0:
 
 lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
-  resolved "https://registry.nlark.com/lodash/download/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 lowercase-keys@^1.0.0, lowercase-keys@^1.0.1:
   version "1.0.1"
@@ -3000,6 +3005,15 @@ mongodb@^3.6.9:
   optionalDependencies:
     saslprep "^1.0.0"
 
+mongoose-update-if-current@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/mongoose-update-if-current/-/mongoose-update-if-current-1.4.0.tgz#1bba7b3509791cf98320a5a06556ee01575a7a20"
+  integrity sha512-Rau2nvdiLExqXrSOwMMgDYQgf/fwTJQpPidTcT7C9UMQ282gTKXjDuh5vrjVvVQpfuvkiPis0tGHdXffaD54bg==
+  dependencies:
+    core-js "^3.2.1"
+    kareem "^2.3.0"
+    regenerator-runtime "^0.13.5"
+
 mongoose@^6.0.10:
   version "6.0.11"
   resolved "https://registry.npmmirror.com/mongoose/download/mongoose-6.0.11.tgz#579cda5157a58b155812974567d7a9a92b26a118"
@@ -3051,8 +3065,8 @@ ms@^2.1.1:
 
 nats@^1.4.9:
   version "1.4.12"
-  resolved "https://registry.npmmirror.com/nats/download/nats-1.4.12.tgz#11a988d5041d95dfb1b6ac1e37c0cfb57b171579"
-  integrity sha1-EamI1QQdld+xtqweN8DPtXsXFXk=
+  resolved "https://registry.yarnpkg.com/nats/-/nats-1.4.12.tgz#11a988d5041d95dfb1b6ac1e37c0cfb57b171579"
+  integrity sha512-Jf4qesEF0Ay0D4AMw3OZnKMRTQm+6oZ5q8/m4gpy5bTmiDiK6wCXbZpzEslmezGpE93LV3RojNEG6dpK/mysLQ==
   dependencies:
     nuid "^1.1.4"
     ts-nkeys "^1.0.16"
@@ -3087,8 +3101,8 @@ node-modules-regexp@^1.0.0:
 
 node-nats-streaming@^0.3.2:
   version "0.3.2"
-  resolved "https://registry.nlark.com/node-nats-streaming/download/node-nats-streaming-0.3.2.tgz#a6d1b77eae837495856893f573e3d78184b39833"
-  integrity sha1-ptG3fq6DdJWFaJP1c+PXgYSzmDM=
+  resolved "https://registry.yarnpkg.com/node-nats-streaming/-/node-nats-streaming-0.3.2.tgz#a6d1b77eae837495856893f573e3d78184b39833"
+  integrity sha512-exeT+FwGYW3UbBSzu8a7ykwWoY6R/vjQLr1RoZ1gnoJ9F66WVvpMZQWCZzLxlf9XRpJTTygcp6P1+WRw9h07Sg==
   dependencies:
     google-protobuf "^3.11.2"
     nats "^1.4.9"
@@ -3141,8 +3155,8 @@ npm-run-path@^4.0.1:
 
 nuid@^1.1.4:
   version "1.1.6"
-  resolved "https://registry.nlark.com/nuid/download/nuid-1.1.6.tgz#a3b5a1df155f6615fed1dbd39ad3dbf9d2e0b82b"
-  integrity sha1-o7Wh3xVfZhX+0dvTmtPb+dLguCs=
+  resolved "https://registry.yarnpkg.com/nuid/-/nuid-1.1.6.tgz#a3b5a1df155f6615fed1dbd39ad3dbf9d2e0b82b"
+  integrity sha512-Eb3CPCupYscP1/S1FQcO5nxtu6l/F3k0MQ69h7f5osnsemVk5pkc8/5AyalVT+NCfra9M71U8POqF6EZa6IHvg==
 
 nwsapi@^2.2.0:
   version "2.2.0"
@@ -3438,6 +3452,11 @@ readdirp@~3.6.0:
   integrity sha1-dKNwvYVxFuJFspzJc0DNQxoCpsc=
   dependencies:
     picomatch "^2.2.1"
+
+regenerator-runtime@^0.13.5:
+  version "0.13.9"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
+  integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
 
 regexp-clone@1.0.0, regexp-clone@^1.0.0:
   version "1.0.0"
@@ -3922,8 +3941,8 @@ ts-jest@^27.0.7:
 
 ts-nkeys@^1.0.16:
   version "1.0.16"
-  resolved "https://registry.nlark.com/ts-nkeys/download/ts-nkeys-1.0.16.tgz#b0c6e7c4f16f976c7e7ddb6982fc789a2f971248"
-  integrity sha1-sMbnxPFvl2x+fdtpgvx4mi+XEkg=
+  resolved "https://registry.yarnpkg.com/ts-nkeys/-/ts-nkeys-1.0.16.tgz#b0c6e7c4f16f976c7e7ddb6982fc789a2f971248"
+  integrity sha512-1qrhAlavbm36wtW+7NtKOgxpzl+70NTF8xlz9mEhiA5zHMlMxjj3sEVKWm3pGZhHXE0Q3ykjrj+OSRVaYw+Dqg==
   dependencies:
     tweetnacl "^1.0.3"
 
@@ -3977,8 +3996,8 @@ tsscmp@1.0.6:
 
 tweetnacl@^1.0.3:
   version "1.0.3"
-  resolved "https://registry.npm.taobao.org/tweetnacl/download/tweetnacl-1.0.3.tgz#ac0af71680458d8a6378d0d0d050ab1407d35596"
-  integrity sha1-rAr3FoBFjYpjeNDQ0FCrFAfTVZY=
+  resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-1.0.3.tgz#ac0af71680458d8a6378d0d0d050ab1407d35596"
+  integrity sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
 
 type-check@~0.3.2:
   version "0.3.2"
@@ -4096,9 +4115,9 @@ v8-to-istanbul@^8.1.0:
     source-map "^0.7.3"
 
 validator@^13.6.0:
-  version "13.6.0"
-  resolved "https://registry.nlark.com/validator/download/validator-13.6.0.tgz#1e71899c14cdc7b2068463cb24c1cc16f6ec7059"
-  integrity sha1-HnGJnBTNx7IGhGPLJMHMFvbscFk=
+  version "13.7.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-13.7.0.tgz#4f9658ba13ba8f3d82ee881d3516489ea85c0857"
+  integrity sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==
 
 vary@~1.1.2:
   version "1.1.2"
