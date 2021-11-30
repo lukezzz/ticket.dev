@@ -9,7 +9,7 @@ it("has a route handler listenting to /api/tickets for port requests", async () 
     expect(res.status).not.toEqual(404);
 });
 it("can only be accessed if the user is signed in", async () => {
-    request(app).post("/api/tickets").send({}).expect(401);
+    await request(app).post("/api/tickets").send({}).expect(401);
 });
 it("returns a status other than 401 if the user is signed in", async () => {
     const res = await request(app)
